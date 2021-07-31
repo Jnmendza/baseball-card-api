@@ -1,0 +1,135 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.7;
+}
+
+h2,h3,p {
+    margin: 12px 0;
+}
+
+.posts__container {
+    background: url('https://mktg.mlbstatic.com/padres/images/wallpapers/desktop/sd_wallpaper_jersey_reveal_1920x1080.jpg') center/cover no-repeat;
+}
+
+.main__wrapper {
+    color: white;
+    display: grid;
+    grid-template-columns: 30% 70%;
+}
+
+.post__left {
+    background: rgba(0,0,0,0.85);
+    min-height: 100vh;
+    padding: 10px 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.post__right {
+    background: rgba(0,0,0,0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.post__left h2 {
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.post__left p {
+    font-weight: 300;
+    font-size: 15px;
+}
+
+.post__title {
+    padding: 30px 0;
+}
+
+.post__title button {
+    display: block;
+    width: 100%;
+    margin: 32px 0;
+    padding: 10px;
+    font-size: 17px;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+    border: none;
+    outline: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    background: #2f241d
+}
+
+.post__title button:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.post__content{
+    width: 70%;
+    margin: 30px 0;
+    box-shadow: 0px 10px 7px -8px rgba(0,0,0,0.75);
+    /********/
+    display: none;
+}
+
+.post__img img{
+    width: 100%;
+    display: block;
+}
+
+.post__text {
+    background: white;
+    color: black;
+    padding: 30px;
+}
+
+.post__text h3 {
+    margin: 0;
+}
+
+.post__text span {
+    font-size: 13px;
+    color: #FFC425;
+    font-weight: 300;
+}
+
+.post__text p {
+    font-size: 15px;
+    font-weight: 300;
+    opacity: 0.7;
+}
+
+.showPost {
+    display:block;
+}
+
+.activeBtn {
+    background: yellow!important;
+    color: black!important;
+    border: 1px solid white!important;
+}
+
+/* Media queries */
+@media screen and (max-width: 992px) {
+    .main__wrapper {
+        grid-template-columns: 100%;
+    }
+
+    .post__title button {
+        width: 75%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
