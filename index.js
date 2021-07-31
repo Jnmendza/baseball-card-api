@@ -1,5 +1,3 @@
-console.log("API", config.apiKey)
-
 const btnContainer = document.getElementById('btn__container');
 const names = ['fernando tatis jr.', 'manny machado', 'jake cronenworth', 'yu darvish', 'mark melancon'];
 
